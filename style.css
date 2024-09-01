@@ -1,0 +1,374 @@
+*{
+  font-family: "Noto Sans JP", sans-serif;
+  margin:0;
+}
+.header{
+    background-color:aqua;
+    height:5rem;
+}
+.header{
+  display:flex;
+  justify-content:space-around;
+  position:sticky;
+  z-index:10;
+  background-color:white;
+  top:0;
+}
+.quickBar{
+  display:flex;
+  position:relative;
+  left:2rem;
+  width:40%;
+  justify-content:space-evenly;
+}
+.searchBar{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  width:40%;
+  position:relative;
+}
+.quickOption{
+  margin:1.5rem;
+  text-decoration:none;
+  color:black;
+  font-weight:340;
+}
+.quickOption:hover{
+  color: #008248;
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+
+}
+.starbucksImg{
+  position:relative;
+  top:1rem;
+}
+.searchBox{
+  width:100%;
+  max-width:280px;
+  height:45%;
+  background: rgba(255,255,255);
+  display:flex;
+  align-items:center;
+  border-radius:60px;
+  padding:5px 5px;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,0.2);
+}
+.searchBox:hover{
+  border:1px solid black;
+}
+
+.searchBox input{
+  width:100%;
+  background:transparent;
+  flex: 1;
+  border: 0;
+  outline:none;
+  padding: 15px 5px;
+  font-size:small;
+}
+::placeholder{
+  color:grey;
+}
+.searchBox button{
+  border:0;
+  background:transparent;
+  padding: 15px 20px;
+}
+
+/*know more*/
+
+/* dropdown for When vp size<950 */
+.dropdown button{
+  display:none;
+  border:0;
+  background:transparent;
+}
+.hidden{
+  display:none;
+}
+
+
+/*Know More*/
+/* .know-more{
+  display:flex;
+  /* justify-content:center; 
+  width:100%;
+  background-color:#1e3932;
+  color:white;
+  border-top:0.2rem solid #d4e9e2;
+  border-bottom:0.2rem solid #d4e9e2;
+  padding:1.7rem 4rem;
+
+
+} */
+
+
+
+
+
+
+.Menu{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:white;
+}
+.menuBox{
+  background-color:rgba(255,255,255,0.7);
+  width:85%;
+  padding:1.5rem;
+}
+.card-wrapper{
+  display:flex;
+  /* align-items:center; */
+  justify-content:space-between;
+  background-color:rgb(0, 98, 65);
+  /* width:fit-content; */
+  border-radius:15px;
+  color:white;
+
+}
+
+.left-part{
+  display:flex;
+  width:fit-content;
+}
+.left-part img{
+  height:250px;
+}
+.left-part ul{
+  list-style:none;
+  padding:1rem;
+  padding-left:3rem;
+}
+.left-part li{
+  padding:0.3rem;
+}
+.hl{
+  font-size:1.2rem;
+  font-weight:800;
+}
+.nl{
+  font-size:0.8rem;
+  font-weight:600;
+}
+.nnl{
+  font-size:0.8rem;
+  font-weight:450;
+  color:rgba(255,255,255,0.7);
+}
+.hl2{
+  font-size:1rem;
+  font-weight:800;
+}
+.right-part{
+  width:fit-content;
+  padding-right:2rem;
+  padding-bottom:2rem;
+  display:flex;
+  align-items:end;
+  
+}
+.right-part button{
+  width:fit-content;
+  padding:0.7rem 3.2rem;
+  border:0;
+  background:transparent;
+  color:white;
+  background-color:rgb(0, 117, 74);
+  border-radius:40px;
+  font-size:small;
+  font-weight:500;
+  
+}
+
+
+/* Media Query for Header  and KnowMore Bar */
+
+@Media (max-width:950px){
+  .other{
+    display:none;
+  }
+  .dropdown button{
+    display:inline-block;
+  }
+}
+@Media (max-width:850px){
+  .searchBar a img{
+    display:none;
+  }
+}
+@Media (max-width:663px){
+  .searchBox input{
+    display:none;
+  }
+  .searchBox .hidden{
+    display:inline-block;
+  }
+}
+
+@Media (max-width:480px){
+  .searchBar{
+    display:none;
+  }
+  .quickOption, .logo{
+    position:relative;
+    right:5rem;
+  }
+}
+
+@Media(max-width:390px){
+  .left-part img{
+    display:none;
+  }
+}
+
+@Media(max-width:584px){
+  .card-wrapper{
+    display:block;
+  }
+}
+
+.heading{
+  padding-top:3rem;
+  padding-left:3rem;
+}
+
+.curation-box{
+  display:flex;
+  flex-direction: column;
+  width:85%;
+  margin-bottom:3rem;
+}
+.Curations{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  flex-wrap:wrap;
+
+}
+
+.imgCircle{
+  /* background-color:black; */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:fit-content;
+  height:fit-content;
+  padding: 0.8rem 3rem;
+  /* border-radius:50%; */
+}
+.imgCircle img{
+  height:110px;
+  border-radius:50%;
+}
+.imgCircle img:hover{
+  border:1.5px solid #008248;
+}
+
+.barista-heading{
+  /* background:linear-gradient(#ECEFFE,#CED6FB); */
+  background-color:#d4e9e2;
+  padding: 2rem 0 2rem 6rem;
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  background-color:#d4e9e2;
+  width:100%;
+}
+.card-container{
+  display:flex;
+  justify-content:center;
+  width:85%;
+  padding:2.9rem;
+}
+
+
+.card-list{
+  background-color:white;
+  display:flex;
+  justify-content:space-around;
+  width:fit-content;
+  height:fit-content;
+  padding-left:1.5rem;
+  padding-top:1.5rem;
+  padding-right:1.5rem;
+  padding-bottom:1.5rem;
+  border-radius:1rem;
+}
+.card-img, .card-badge{
+  padding-right:0.8rem;
+}
+.card-img{
+  height:5rem;
+  width:5rem;
+  /* border-radius:0.4rem 0.4rem 0.4rem 0.4rem; */
+}
+.card-button{
+  display:flex;
+  align-items:end;
+}
+.card-button button{
+  height:fit-content;
+  border:0;
+  /* margin-left:5rem; */
+  background:transparent;
+  background-color:#008248;
+  border-radius:1rem;
+  color:white;
+  padding:0.4rem 1.4rem;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.card-button button:hover{
+  background-color:#1e3932
+}
+
+
+.footer{
+  display:flex;
+  background-color:#0E382C;
+  justify-content:space-evenly;
+  padding:6rem;
+  margin:4rem 0 0 0;
+  flex-wrap:wrap;
+  color:white;
+}
+
+.footer ul{
+  list-style:none;
+}
+
+.play-store{
+  display:flex;
+  flex-direction:column;
+}
+.footer ul{
+  font-size:smaller;
+  font-weight:300;
+}
+.footer div{
+  padding:1rem;
+}
+.footer .main{
+  font-size:larger;
+  font-weight:700;
+  padding-bottom:1rem;
+}
+.footer ul li{
+  padding-bottom:1rem;
+}
+.social-media img{
+  padding-left:1rem;
+}
+.play-store .android{
+  padding-bottom:2rem;
+  
+}
